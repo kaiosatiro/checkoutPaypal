@@ -162,7 +162,7 @@
       var state = document.getElementById('state').value;
       var zipcode = document.getElementById('zip').value;
       var country = document.getElementById('country').value;
-      return fetch("kaiosatiro.pythonanywhere.com/createorder", {
+      return fetch("https://kaiosatiro.pythonanywhere.com/createorder", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -194,7 +194,7 @@
     },
     onApprove(data) {
       // console.log(data)
-      return fetch("kaiosatiro.pythonanywhere.com/checkout", {
+      return fetch("https://kaiosatiro.pythonanywhere.com/checkout", {
         method: "POST",
         body: JSON.stringify({
           orderID: data.orderID

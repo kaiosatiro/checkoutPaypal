@@ -38,7 +38,7 @@ def checkout(request):
     }
 
     call = requests.post(f'https://api-m.sandbox.paypal.com/v2/checkout/orders/{orderID}/capture', headers=headers)
-    dados['url'] = f'kaiosatiro.pythonanywhere.com/confirmation?orderid={orderID}'
+    dados['url'] = f'https://kaiosatiro.pythonanywhere.com/confirmation?orderid={orderID}'
 
     return JsonResponse(dados)
 
