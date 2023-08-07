@@ -9,7 +9,7 @@ SECRET_KEY = str(os.getenv('SECRETKEY'))
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'kaiosatiro.pythonanywhere.com', 'fa25-187-56-248-204.ngrok-free.app']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'kaiosatiro.pythonanywhere.com']
 
 PAYPAL_TEST =True
 
